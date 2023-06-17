@@ -1,6 +1,6 @@
 import '../css/common.css';
 import Player from '@vimeo/player';
-import { throttle } from 'lodash';
+import { throttle } from 'lodash.throttle';
 
 const onPlay = function (data) {
     const stringifyData = JSON.stringify(data);
