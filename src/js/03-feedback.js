@@ -19,7 +19,7 @@ refs.form.addEventListener('submit', event => {
     localStorage.removeItem(STORAGE_KEY);
 });
 
-function onTextareaInsput(event) {
+function onTextareaInput(event) {
     formData[event.target.name] = event.target.value;
     const stringiffiedData = JSON.stringify(formData);
     localStorage.setItem(STORAGE_KEY, stringiffiedData);
